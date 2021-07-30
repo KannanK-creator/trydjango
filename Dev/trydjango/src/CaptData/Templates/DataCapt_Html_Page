@@ -1,0 +1,9 @@
+<html>
+	<title>Data Capture Form</title>
+	<h1>
+		<form method="POST">{% csrf_token %}
+			{{ DataCapt_Blk.as_p }}
+			<input type="submit" name="Save" value="Submit" />
+		</form>
+	</h1>
+</html>
